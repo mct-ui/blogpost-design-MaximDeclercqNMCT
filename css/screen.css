@@ -52,13 +52,11 @@ html {
     line-height: 1.5;
     font-family: "Droid serif";
     color: #5c6366;
-    padding: 48px 24px 24px;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; /* beide ook aan boilerplate toevoegen!!!!!!!!!!!*/
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    max-width: 42em;
     margin: 0 auto;
 }
 
@@ -122,6 +120,9 @@ h6 {
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 24px;
+}
+*+h2{
+  margin-top: 48px;
 }
 
 p,
@@ -209,6 +210,54 @@ a:focus {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {}
+
+
+
+/*
+  components: Author
+*/
+/*hier loopt het fout*/
+.c-author {
+  display: flex;
+  align-items: center;
+}
+
+.c-author__image{
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.c-author__name,
+.c-author__meta{
+  margin-bottom: 0;
+}
+
+.c-author__meta{
+  font-size: 14px;
+  font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
+  line-height: 16px;
+  margin-top: 4px;
+}
+.c-author__name{
+  font-size: 16px;
+  font-size: 16px;
+}
+
+
+/*
+  components: article
+*/
+.c-article__header,
+.c-article__body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.c-article__header{
+  padding: 24px 24px 0;
+}
 
 /*
     Print styles.
